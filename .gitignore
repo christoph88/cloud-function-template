@@ -1,4 +1,4 @@
-.env.yml
+.env.yaml
 # Logs
 logs
 *.log
