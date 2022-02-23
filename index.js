@@ -15,5 +15,13 @@ exports.run = async (req, res) => {
   res.status(200).send(test);
 };
 // Needed for Quokka
-// exports.run({ query: { page: 1 } }, null);
-// exports.run({ query: { getAmountOfPages: true } }, null);
+// exports.run(
+//   { query: { q: 'drunk with a gun nosferatu' } },
+//   {
+//     status: (text) => {
+//       console.log('status >> ', text);
+//       // eslint-disable-next-line no-unused-expressions
+//       return { send: (text) => console.log('send >> ', text) };
+//     },
+//   }
+// );
