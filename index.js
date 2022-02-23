@@ -35,13 +35,13 @@ app.use(getDefault);
 // Set our GCF handler to our Express app.
 exports.run = app;
 // Needed for Quokka
-getDefault(
-  { query: { q: 'drunk with a gun nosferatu' } },
-  {
-    status: (text) => {
-      console.log('status >> ', text);
-      // eslint-disable-next-line no-unused-expressions
-      return { send: (text) => console.log('send >> ', text) };
-    },
-  }
-);
+// getDefault(
+//   { query: { q: 'drunk with a gun nosferatu' } },
+//   {
+//     status: (text) => {
+//       console.log('status >> ', text);
+//       // eslint-disable-next-line no-unused-expressions
+//       return { send: (text) => console.log('send >> ', text) };
+//     },
+//   }
+// );
