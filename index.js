@@ -33,7 +33,7 @@ app.use('/test2/', getTest);
 app.use(getDefault);
 
 // Set our GCF handler to our Express app.
-exports.users = app;
+exports.run = app;
 // Needed for Quokka
 // exports.run(
 //   { query: { q: 'drunk with a gun nosferatu' } },
