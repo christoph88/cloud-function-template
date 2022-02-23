@@ -9,7 +9,7 @@ require('env-yaml').config({ path: '.env.yaml' });
  *                     More info: https://expressjs.com/en/api.html#res
  */
 exports.run = async (req, res) => {
-  const { page, getAmountOfPages } = req.query;
+  const { param } = req.query;
   // eslint-disable-next-line camelcase
   const { test } = process.env;
   res.status(200).send(test);
