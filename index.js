@@ -9,6 +9,8 @@ const express = require('express');
  * @param {Object} res Cloud Function response context.
  *                     More info: https://expressjs.com/en/api.html#res
  */
+// information for authentication
+// https://cloud.google.com/functions/docs/securing/authenticating
 
 const getId = async (req, res) => {
   const { id } = req.params;
